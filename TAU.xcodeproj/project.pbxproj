@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2E00479404B3CE2092FCF8C8 /* libPods-TAU.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D5ABFA810DCF760AE2C4E5 /* libPods-TAU.a */; };
 		3400FF9528EB42D40010F1EC /* TAUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3400FF9428EB42D40010F1EC /* TAUUITests.swift */; };
+		3456DF8128EB8A1700F2C061 /* UFG_lib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3456DF7A28EB852700F2C061 /* UFG_lib.xcframework */; };
+		3456DF8228EB8A1700F2C061 /* UFG_lib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3456DF7A28EB852700F2C061 /* UFG_lib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9B5BC70E220F55C20047CFA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BC70D220F55C20047CFA4 /* AppDelegate.swift */; };
 		9B5BC710220F55C20047CFA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BC70F220F55C20047CFA4 /* ViewController.swift */; };
 		9B5BC713220F55C20047CFA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BC711220F55C20047CFA4 /* Main.storyboard */; };
@@ -35,10 +37,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3456DF8328EB8A1700F2C061 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3456DF8228EB8A1700F2C061 /* UFG_lib.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		251A0CD4CFBD1F5962F88855 /* Pods-TAU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAU.debug.xcconfig"; path = "Target Support Files/Pods-TAU/Pods-TAU.debug.xcconfig"; sourceTree = "<group>"; };
 		3400FF9228EB42D40010F1EC /* TAUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3400FF9428EB42D40010F1EC /* TAUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITests.swift; sourceTree = "<group>"; };
+		3456DF7A28EB852700F2C061 /* UFG_lib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UFG_lib.xcframework; path = Frameworks/UFG_lib.xcframework; sourceTree = "<group>"; };
 		44D5ABFA810DCF760AE2C4E5 /* libPods-TAU.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAU.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		606880BEEA8E6F67066BC113 /* Pods-TAU-TAUUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAU-TAUUITests.debug.xcconfig"; path = "Target Support Files/Pods-TAU-TAUUITests/Pods-TAU-TAUUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		70E0AB85C08C4772C6AD7E8B /* libPods-TAU-TAUUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAU-TAUUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3456DF8128EB8A1700F2C061 /* UFG_lib.xcframework in Frameworks */,
 				2E00479404B3CE2092FCF8C8 /* libPods-TAU.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +104,7 @@
 		1DAF9594FF0F32806A58EB53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3456DF7A28EB852700F2C061 /* UFG_lib.xcframework */,
 				44D5ABFA810DCF760AE2C4E5 /* libPods-TAU.a */,
 				70E0AB85C08C4772C6AD7E8B /* libPods-TAU-TAUUITests.a */,
 			);
@@ -186,6 +205,7 @@
 				9B5BC706220F55C20047CFA4 /* Sources */,
 				9B5BC707220F55C20047CFA4 /* Frameworks */,
 				9B5BC708220F55C20047CFA4 /* Resources */,
+				3456DF8328EB8A1700F2C061 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

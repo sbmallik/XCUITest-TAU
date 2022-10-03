@@ -46,5 +46,18 @@ Open the TAU application scheme and add the following environment variables in t
 Click the Run button (right arrow) on the toolbar of Xcode to build and run the application.
 
 ### Run the visual test
-Stop the application that was started in the above step. Navigate to the test file `TAUUITests/TAUUITests.swift` file and run the test `testTAUApplitoolEyes`. Once the test pass, check the results in Applitools test manager.
+
+#### Add UFG library
+Before running the visual tests using Ultra Fast Grid (UFG) library, the following steps must be executed:
+1. Stop the application that was started in the above step.
+1. Go to the URL to load the Applitools library as per this link: https://applitools.com/docs/topics/overview/nmg_install_ios.html#Static. Unzip the framework file and move the file `UFG_lib.xcframework` to the root of project folder.
+1. Select the main application name in the project navigator inside Xcode.
+1. Select the application name in the Targets sectio.
+1. Select the General tab.
+1. Go to the `Frameworks, Libraries, and Embedded Content` section within the selected tab and click on `+` button.
+1. Select `Add Files...` from the drop down list box within the resultant dialog box.
+1. Select the file `UFG_lib.xcworkspace` and click on `open` button. 
+1. Please ensure `Embed & Sign` was selected in the `Embed` column. 
+#### Run the visual test
+After adding the UFG library, the visual tests are ready for execution. To do this, simply navigate to the test file `TAUUITests/TAUUITests.swift` file and run the test `testTAUApplitoolEyes`. This test code in the file uses the UFG library. Once the test pass, check the results in Applitools test manager.
 

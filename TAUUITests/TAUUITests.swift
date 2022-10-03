@@ -5,7 +5,7 @@ import EyesXCUI
 class TAUUITests: XCTestCase {
         
     let app = XCUIApplication()
-    let runner = ClassicRunner()
+    let runner = VisualGridRunner(options: RunnerOptions().testConcurrency(5))
     var eyes: Eyes!
         
     override func setUp() {
@@ -13,6 +13,9 @@ class TAUUITests: XCTestCase {
         continueAfterFailure = false
         app.launch()
         let config = Configuration()
+        let iPhone12ProMax = IosDeviceInfo(deviceName: .deviceiPhone12ProMax)
+        let iPadPro = IosDeviceInfo(deviceName: .deviceiPadPro3rdgeneration)
+        config.addMobileDevices([iPhone12ProMax, iPadPro])
         config.apiKey = ProcessInfo.processInfo.environment["APPLITOOLS_API_KEY"] ?? ""
         config.serverUrl = ProcessInfo.processInfo.environment["APPLITOOLS_SERVER_URL"] ?? ""
         eyes = Eyes(runner: runner)

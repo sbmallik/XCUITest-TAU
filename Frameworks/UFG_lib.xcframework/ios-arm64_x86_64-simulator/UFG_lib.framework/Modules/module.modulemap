@@ -1,0 +1,4 @@
+framework module UFG_lib {
+  header "UFG_lib-Swift.h"
+  requires objc
+}
