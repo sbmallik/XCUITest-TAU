@@ -27,8 +27,7 @@ git clone git@github.com:sbmallik/XCUITest-TAU.git
 gem install cocoapods
 ```
 The cocoapods version can be added in the above command as an option.
-
-###Install EyesXCUI pod
+### Install EyesXCUI pod
 The visual test requires the EyesXCUI pod to be installed. Please use the following command in this regard:
 ```bash
 pod install
