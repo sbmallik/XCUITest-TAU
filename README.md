@@ -21,6 +21,7 @@ The **main** branch of the reposotory demonstrates the legacy visual tests for i
 Clone the main branch of the repository with the following command:
 ```bash
 git clone git@github.com:sbmallik/XCUITest-TAU.git
+```
 ### Install Cocoapods
 ```bash
 gem install cocoapods
