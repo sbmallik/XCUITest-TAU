@@ -1,4 +1,5 @@
 .DS_Store
 Pods/
-TAU.xcodeproj
-TAU.xcworkspace
+TAU.xcodeproj/
+TAU.xcworkspace/
+
