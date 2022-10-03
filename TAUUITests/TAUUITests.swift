@@ -41,9 +41,9 @@ class TAUUITests: XCTestCase {
     }
     
     func testTAUApplitoolEyes() {
-        eyes.open(withApplicationName: "TAU", testName: "TAU Test with EyesXCUI SDK!")
+        eyes.open(withApplicationName: "TAU", testName: "Applitools XCUI demo")
         app.buttons["enrollButton"].tap()
-        eyes.checkWindow(withTag: "Please Enter City")
+        eyes.check(withTag: "Missing city name", andSettings: Target.window().timeout(inSeconds: 15))
     }
     
 }
