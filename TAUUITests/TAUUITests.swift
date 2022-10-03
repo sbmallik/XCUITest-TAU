@@ -4,13 +4,15 @@ import EyesXCUI
 
 class TAUUITests: XCTestCase {
         
-    var app = XCUIApplication()
-    var eyes = Eyes()
+    let app = XCUIApplication()
+    let runner = ClassicRunner()
+    var eyes: Eyes!
         
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
         app.launch()
+        eyes = Eyes(runner: runner)
         eyes.apiKey = ProcessInfo.processInfo.environment["APPLITOOLS_API_KEY"] ?? ""
         eyes.serverURL = ProcessInfo.processInfo.environment["APPLITOOLS_SERVER_URL"] ?? ""
     }
@@ -18,11 +20,8 @@ class TAUUITests: XCTestCase {
     override func tearDown() {
         super.tearDown()
         app.terminate()
-        do {
-            try eyes.close()
-        } catch {
-            eyes.abortIfNotClosed()
-        }
+        eyes.closeAsync()
+        print(runner.getAllTestResultsShouldThrowException(false))
     }
 
     func testAllElementsOnMainScreen() throws {
