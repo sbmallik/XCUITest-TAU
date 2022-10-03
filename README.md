@@ -13,9 +13,9 @@ In order to follow this course, you will need
  
  P.S: Please use the `iPhone XR` or similar size simulator for this course to avoid keyboard overlapping issues. If you use a smaller simulator like `iPhone 6` or `iPhone 5s` you might encounter keyboard overlapping issue.
 
-## Running legacy visual tests 
+## Running visual tests using UFG library
 
-The **main** branch of the reposotory demonstrates the legacy visual tests for iOS application. 
+The **ufgTest** branch of the reposotory demonstrates the visual tests using Ultra Fast Grid (UFG) library for iOS application. 
 
 ### Clone repository
 Clone the main branch of the repository with the following command:
@@ -50,7 +50,7 @@ Click the Run button (right arrow) on the toolbar of Xcode to build and run the 
 #### Add UFG library
 Before running the visual tests using Ultra Fast Grid (UFG) library, the following steps must be executed:
 1. Stop the application that was started in the above step.
-1. Go to the URL to load the Applitools library as per this link: https://applitools.com/docs/topics/overview/nmg_install_ios.html#Static. Unzip the framework file and move the file `UFG_lib.xcframework` to the root of project folder.
+1. Go to the URL to load the Applitools library as per this link: https://applitools.com/docs/topics/overview/nmg_install_ios.html#Static. Unzip the framework file and move the file `UFG_lib.xcframework` to the `Frameworks` folder located in the root folder. This step is already done in the repository.
 1. Select the main application name in the project navigator inside Xcode.
 1. Select the application name in the Targets sectio.
 1. Select the General tab.
