@@ -12,9 +12,11 @@ class TAUUITests: XCTestCase {
         super.setUp()
         continueAfterFailure = false
         app.launch()
+        let config = Configuration()
+        config.apiKey = ProcessInfo.processInfo.environment["APPLITOOLS_API_KEY"] ?? ""
+        config.serverUrl = ProcessInfo.processInfo.environment["APPLITOOLS_SERVER_URL"] ?? ""
         eyes = Eyes(runner: runner)
-        eyes.apiKey = ProcessInfo.processInfo.environment["APPLITOOLS_API_KEY"] ?? ""
-        eyes.serverURL = ProcessInfo.processInfo.environment["APPLITOOLS_SERVER_URL"] ?? ""
+        eyes.configuration = config
     }
         
     override func tearDown() {
