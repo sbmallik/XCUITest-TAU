@@ -1,4 +1,4 @@
-# XCTUTest-TAU  
+# XCUITest-TAU  
 
 This repo contains the code to run visual tests for iOS application 
 
