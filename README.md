@@ -58,6 +58,7 @@ Before running the visual tests using Ultra Fast Grid (UFG) library, the followi
 1. Select `Add Files...` from the drop down list box within the resultant dialog box.
 1. Select the file `UFG_lib.xcworkspace` and click on `open` button. 
 1. Please ensure `Embed & Sign` was selected in the `Embed` column. 
+1. Build and run the target application.
 #### Run the visual test
 After adding the UFG library, the visual tests are ready for execution. To do this, simply navigate to the test file `TAUUITests/TAUUITests.swift` file and run the test `testTAUApplitoolEyes`. This test code in the file uses the UFG library. Once the test pass, check the results in Applitools test manager.
 
